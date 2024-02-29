@@ -1,0 +1,21 @@
+name: steamgriddb
+description: A dart client for steamgriddb.com
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  dio:
+  retrofit: ^4.0.0
+  json_annotation: ^4.8.1
+  freezed_annotation:
+
+dev_dependencies:
+  test:
+  lints: ^3.0.0
+  retrofit_generator: ^7.0.0
+  build_runner:
+  json_serializable: ^6.6.2
+  freezed:
