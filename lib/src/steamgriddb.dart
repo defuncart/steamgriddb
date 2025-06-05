@@ -56,6 +56,16 @@ class SteamGridDB {
     return result.data;
   }
 
+  /// Retrieve banners by [gameId]
+  Future<List<Grid>> getBannersForGame(String gameId) async {
+    final result = await _client.getGridsGame(
+      gameId,
+      mines: 'image/png,image/jpeg',
+      dimensions: '460x215,920x430',
+    );
+    return result.data;
+  }
+
   /// Retrieve icons by [gameId]
   Future<List<Grid>> getIconsForGame(String gameId) async {
     final result = await _client.getIconsGame(
